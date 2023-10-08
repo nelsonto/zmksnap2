@@ -10,10 +10,19 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/bt.h>
 
+&left_encoder {
+    steps = <80>;
+};
+
+&right_encoder {
+    steps = <80>;
+};
+
 / {
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <20>;
     };
 
     keymap {
