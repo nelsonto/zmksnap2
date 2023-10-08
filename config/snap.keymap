@@ -11,11 +11,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 &left_encoder {
-    steps = <160>;
+    steps = <40>;
 };
 
 &right_encoder {
-    steps = <160>;
+    steps = <40>;
 };
 
 / {
